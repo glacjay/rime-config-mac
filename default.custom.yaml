@@ -1,0 +1,23 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.13.0
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Sat May 18 16:48:06 2019"
+  rime_version: 1.4.0
+
+patch:
+  "switcher/hotkeys":
+    - Control+F11
+  schema_list:
+    - { schema: wubi86 }
+  "menu/page_size": 7
+  # 左 shift 的默认功能就是临时英文，不造为啥当初要禁掉它（应该不会是后来加的新功能吧？
+  ascii_composer:
+    switch_key:
+      # macos 不区分左、右 shift 键，所以必须把这俩配置成一样的功能
+      # macos 下包含 shift 的组合键太容易触发这个 shift 的切换功能了，还是想其他办法吧。
+      # Shift_L: commit_code
+      # Shift_R: commit_code
+  key_binder:
+    bindings/+:
+      - { when: composing, accept: Control+Shift+p, set_option: inline_preedit }

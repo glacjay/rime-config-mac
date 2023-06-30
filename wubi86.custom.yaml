@@ -1,0 +1,14 @@
+patch:
+  # 默认中文
+  "switches/@0/reset": 0
+  # punctuator:
+  #   import_preset: symbols
+  #   half_shape:
+  #     ';' : { commit: '；' }
+  speller:
+    max_code_length: 4
+    auto_select: true
+    auto_select_unique_candidate: true
+__patch:
+  - patch/+:
+      __include: emoji_suggestion:/patch
