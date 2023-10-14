@@ -18,6 +18,8 @@ patch:
       # macos 下包含 shift 的组合键太容易触发这个 shift 的切换功能了，还是想其他办法吧。
       # Shift_L: commit_code
       # Shift_R: commit_code
+      Control_L: inline_ascii
+      # Eisu_toggle: clear
   key_binder:
     bindings/+:
       - { when: composing, accept: Control+Shift+p, set_option: inline_preedit }
