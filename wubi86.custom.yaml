@@ -9,6 +9,14 @@ patch:
     max_code_length: 4
     auto_select: true
     auto_select_unique_candidate: true
+  engine/translators/@before last: table_translator@custom_phrase
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
 __patch:
   - patch/+:
       __include: emoji_suggestion:/patch
