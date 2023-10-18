@@ -1,5 +1,6 @@
 patch:
-  style/inline_preedit: false
+  # 这种方式的好处是，在企业微信等应用中，未上屏的也编码可以触发自动补全。
+  style/inline_preedit: true
   app_options:
     com.microsoft.VSCode:
       ascii_mode: false
